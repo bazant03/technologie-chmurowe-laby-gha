@@ -27,7 +27,9 @@ RUN case $TARGETPLATFORM in \
 # --------- ETAP 2 ------------------------
 FROM scratch AS final
 
-LABEL org.opencontainers.image.authors="Marek Ruszecki <s101505@pollub.edu.pl>"
+LABEL org.opencontainers.image.authors="Marek Ruszecki <s101505@pollub.edu.pl>" \
+      org.opencontainers.image.description="Simplest weather app in rust" \
+      org.opencontainers.image.source="https://github.com/bazant03/technologie-chmurowe-laby-gha.git" 
 
 USER 10001:10001
 
