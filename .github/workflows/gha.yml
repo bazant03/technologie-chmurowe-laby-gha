@@ -60,6 +60,6 @@ jobs:
           cache-from: |
             type=registry,ref=${{ vars.DOCKERHUB_USERNAME }}/weather-workflow:cache 
           cache-to: |
-            type=registry,ref=${{ vars.DOCKERHUB_USERNAME }}/weather-workflow:cache  
+            type=registry,ref=${{ vars.DOCKERHUB_USERNAME }}/weather-workflow:cache,mode=max  
           tags: ${{ steps.meta.outputs.tags }}
       
